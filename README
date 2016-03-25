@@ -1,0 +1,28 @@
+NAME
+    Mojolicious::Plugin::Syslog - Mojolicious Plugin to provide a Perl
+    interface to the UNIX syslog(3) calls
+
+SYNOPSIS
+      # Mojolicious
+      $self->plugin('Syslog');
+      $self->syslog('info', "Log this message to syslog");
+
+      # Mojolicious::Lite
+      plugin 'Syslog';
+      app->syslog('info', "Log this message to syslog");
+
+DESCRIPTION
+    Mojolicious::Plugin::Syslog is a Mojolicious plugin.
+
+METHODS
+    Mojolicious::Plugin::Syslog inherits all methods from
+    Mojolicious::Plugin and implements the following new ones.
+
+  register
+      $plugin->register(Mojolicious->new);
+
+    Register plugin in Mojolicious application.
+
+SEE ALSO
+    Mojolicious, Mojolicious::Guides, <http://mojolicious.org>.
+
